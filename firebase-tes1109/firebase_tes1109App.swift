@@ -24,7 +24,7 @@ struct firebase_tes1109App: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EntryAuthView()
         }
     }
 }

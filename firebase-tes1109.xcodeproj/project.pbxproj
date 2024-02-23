@@ -12,7 +12,8 @@
 		3B1890D62B888C35005D3FE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B1890D52B888C35005D3FE9 /* Assets.xcassets */; };
 		3B1890D92B888C35005D3FE9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B1890D82B888C35005D3FE9 /* Preview Assets.xcassets */; };
 		3B35306E2B88976B005D5379 /* EntryAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B35306D2B88976B005D5379 /* EntryAuthView.swift */; };
-		3B4E51822B8890D900426BDE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B4E51812B8890D900426BDE /* GoogleService-Info.plist */; };
+		3B3530702B88A060005D5379 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B35306F2B88A060005D5379 /* GoogleService-Info.plist */; };
+		3B3530722B88A59B005D5379 /* LoginAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3530712B88A59B005D5379 /* LoginAuthView.swift */; };
 		58971196DDFCF7245215CEF1 /* Pods_firebase_tes1109.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320E17315CFDE4658732187A /* Pods_firebase_tes1109.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +25,8 @@
 		3B1890D52B888C35005D3FE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B1890D82B888C35005D3FE9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B35306D2B88976B005D5379 /* EntryAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryAuthView.swift; sourceTree = "<group>"; };
-		3B4E51812B8890D900426BDE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3B35306F2B88A060005D5379 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3B3530712B88A59B005D5379 /* LoginAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAuthView.swift; sourceTree = "<group>"; };
 		9C25932F1B667C27A8457D32 /* Pods-firebase-tes1109.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase-tes1109.release.xcconfig"; path = "Target Support Files/Pods-firebase-tes1109/Pods-firebase-tes1109.release.xcconfig"; sourceTree = "<group>"; };
 		FA964F58498B4808545C3814 /* Pods-firebase-tes1109.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firebase-tes1109.debug.xcconfig"; path = "Target Support Files/Pods-firebase-tes1109/Pods-firebase-tes1109.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,9 +74,10 @@
 			isa = PBXGroup;
 			children = (
 				3B1890D12B888C34005D3FE9 /* firebase_tes1109App.swift */,
+				3B35306F2B88A060005D5379 /* GoogleService-Info.plist */,
 				3B35306D2B88976B005D5379 /* EntryAuthView.swift */,
-				3B4E51812B8890D900426BDE /* GoogleService-Info.plist */,
 				3B1890D32B888C34005D3FE9 /* ContentView.swift */,
+				3B3530712B88A59B005D5379 /* LoginAuthView.swift */,
 				3B1890D52B888C35005D3FE9 /* Assets.xcassets */,
 				3B1890D72B888C35005D3FE9 /* Preview Content */,
 			);
@@ -159,7 +162,7 @@
 			files = (
 				3B1890D92B888C35005D3FE9 /* Preview Assets.xcassets in Resources */,
 				3B1890D62B888C35005D3FE9 /* Assets.xcassets in Resources */,
-				3B4E51822B8890D900426BDE /* GoogleService-Info.plist in Resources */,
+				3B3530702B88A060005D5379 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3530722B88A59B005D5379 /* LoginAuthView.swift in Sources */,
 				3B35306E2B88976B005D5379 /* EntryAuthView.swift in Sources */,
 				3B1890D42B888C34005D3FE9 /* ContentView.swift in Sources */,
 				3B1890D22B888C34005D3FE9 /* firebase_tes1109App.swift in Sources */,
@@ -363,7 +367,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Swift-Beginners.firebase-tes1109";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eri.firebase-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -394,7 +398,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Swift-Beginners.firebase-tes1109";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eri.firebase-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

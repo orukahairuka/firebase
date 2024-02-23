@@ -14,10 +14,29 @@ struct EntryAuthView: View {
             TextField("password", text: $password).padding().textFieldStyle(.roundedBorder)
 
             Button(action: {
-
+                print("ボタン押した")
+                Auth.auth().createUser(withEmail: email, password: password) { result, error in
+                    if let user = result?.user {
+                        let request = user.createProfileChangeRequest()
+                        request.displayName = name
+                        request.commitChanges { error in
+                            if error == nil {
+                                user.sendEmailVerification() { error in//確認メール送信
+                                    if error == nil {
+                                        print("仮登録画面へ")
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }, label: {
                 Text("新規登録")
             }).padding()
         }
     }
+}
+
+#Preview {
+    EntryAuthView()
 }
