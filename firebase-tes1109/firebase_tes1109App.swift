@@ -9,6 +9,7 @@ import SwiftUI
 import FirebaseCore
 import FirebaseAuth
 
+//firebaseの初期化
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
